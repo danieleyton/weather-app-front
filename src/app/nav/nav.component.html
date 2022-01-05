@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['/']">Weather App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" [routerLink]="['weather', 'Santiago']">Santiago</a>
+      <a class="nav-item nav-link" [routerLink]="['/weather', 'Zurich']">Zurich</a>
+      <a class="nav-item nav-link" [routerLink]="['/weather', 'Auckland']">Auckland</a>
+      <a class="nav-item nav-link" [routerLink]="['/weather', 'Sydney']">Sydney</a>
+      <a class="nav-item nav-link" [routerLink]="['/weather', 'Londres']">Londres</a>
+      <a class="nav-item nav-link" [routerLink]="['/weather', 'Georgia']">Georgia</a>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
